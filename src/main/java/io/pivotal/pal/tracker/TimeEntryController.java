@@ -47,7 +47,8 @@ public class TimeEntryController {
         //return ResponseEntity.ok(timeEntryRepository.update(id, timeEntry));
 
         if (timeEntry.getProjectId() == 0) {
-            return new ResponseEntity(HttpStatus.NOT_FOUND);
+            timeEntry.setId(id);
+            return new ResponseEntity(timeEntry,HttpStatus.NOT_FOUND);
         } else {
             return new ResponseEntity(timeEntryRepository.update(id, timeEntry), HttpStatus.OK);
         }

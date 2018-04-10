@@ -32,8 +32,9 @@ public class InMemoryTimeEntryRepository {
 
     public TimeEntry update(Long id, TimeEntry timeEntry) {
 
-       timeEntry.setId(id);
-        return map.replace(id,timeEntry);
+        timeEntry.setId(id);
+        map.replace(id, timeEntry);
+        return timeEntry;
     }
 
     public void delete(Long id) {

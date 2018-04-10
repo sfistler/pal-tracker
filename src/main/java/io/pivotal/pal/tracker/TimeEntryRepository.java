@@ -1,5 +1,6 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
@@ -11,45 +12,34 @@ import java.util.*;
 @Repository
 public class TimeEntryRepository {
 
-    //private static List<TimeEntry> list = new ArrayList<>();
-    private static Map<Long, TimeEntry> map = new HashMap<Long, TimeEntry>();
+    @Autowired
+    private InMemoryTimeEntryRepository inMemoryTimeEntryRepository;
 
     public TimeEntry create(TimeEntry timeEntry) {
-        /*
-        list.clear();
-        timeEntry.setId(list.size() + 1);
-        list.add(timeEntry);
-        return timeEntry;
-        */
-
-        if (timeEntry.getId() == 0) {
+        /*if (timeEntry.getId() == 0) {
             timeEntry.setId(System.currentTimeMillis());
         }
         map.put(timeEntry.getId(), timeEntry);
-        return timeEntry;
+        return timeEntry;*/
+        return inMemoryTimeEntryRepository.create(timeEntry);
     }
 
     public TimeEntry find(Long id) {
-        //return list.get(list.size()-1);
-
-        if (map.containsKey(id)) {
+        /*if (map.containsKey(id)) {
             return map.get(id);
         } else {
             return null;
-        }
+        }*/
+       return inMemoryTimeEntryRepository.find(id);
     }
 
     public List<TimeEntry> list() {
-        //return list;
-
-        return new ArrayList(map.values());
+        //return new ArrayList(map.values());
+        return inMemoryTimeEntryRepository.list();
     }
 
     public TimeEntry update(Long id, TimeEntry timeEntry) {
-        //return new TimeEntry(2L, 3L, LocalDate.parse("2017-01-09"), 9);
-        //return timeEntry;
-
-        if (map.containsKey(id)) {
+        /*if (map.containsKey(id)) {
             TimeEntry entry = map.get(id);
             entry.setDate(timeEntry.getDate());
             entry.setHours(timeEntry.getHours());
@@ -58,13 +48,15 @@ public class TimeEntryRepository {
             return entry;
         } else {
             return null;
-        }
+        }*/
+        return inMemoryTimeEntryRepository.update(id,timeEntry);
     }
 
     public void delete(Long id) {
-        if (map.containsKey(id)) {
+        /*if (map.containsKey(id)) {
             map.remove(id);
-        }
+        }*/
+        inMemoryTimeEntryRepository.delete(id);
     }
 
 }
