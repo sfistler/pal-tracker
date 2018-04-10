@@ -1,0 +1,215 @@
+    1  cd ~/Downloads/
+    2  chmod +x ubuntu_install.sh
+    3  ./ubuntu_install.sh
+    4  sudo apt update
+    5  sudo apt -y upgrade
+    6  sudo apt -y autoremove
+    7  reboot
+    8  cd ~/Downloads/
+    9  ls
+   10  ./ubuntu_install.sh
+   11  ls
+   12  cd ~/workspace/
+   13  sudo
+   14  git
+   15  clear
+   16  git clone https://github.com/platform-acceleration-lab/prerequisite-code.git
+   17  cd prerequisite-code/
+   18  cls
+   19  ls
+   20  java -version
+   21  ./gradlew build
+   22  pwd
+   23  cf login https://api.sys.longs.pal.pivotal.io
+   24  cf push
+   25  ./gradlew prerequisites -PprerequisiteUrl=http://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   26  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   27  ./gradlew prerequisite -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   28  ./gradlew prerequisite -PprerequisiteUrl=http://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   29  ./gradlew prerequisites -PprerequisiteUrl=http://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   30  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   31  ./gradlew prerequisite -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   32  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/ --stacktrace
+   33  ./gradlew build
+   34  cf push
+   35  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/ --stacktrace
+   36  ./gradlew build
+   37  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io/
+   38  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io
+   39  ./gradlew build
+   40  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io
+   41  cls
+   42  clear
+   43  cd..
+   44  cd ..
+   45  mkdir assignment-submission
+   46  cddir assignment-submission
+   47  cd assignment-submission
+   48  mkdir -p assignment-submission
+   49  cd assignment-submission
+   50  cd ..
+   51  rm -rf assignment-submission/
+   52  ls
+   53  cd ..
+   54  rm -rf assignment-submission/
+   55  mkdir -p assignment-submission
+   56  cd assignment-submission/
+   57  clear
+   58  gradle wrapper
+   59  ls
+   60  touch build.gradle
+   61  ./gradlew tasks
+   62  ./gradlew testAssignment
+   63  clear
+   64  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+   65  ./gradlew tasks
+   66  ls - all
+   67  ls -all
+   68  gradle wrapper
+   69  ./gradlew tasks
+   70  gradle -v
+   71  rm -rf .gradle/
+   72  gradle wrapper
+   73  ls -all
+   74  ./gradlew tasks
+   75  cd ..
+   76  pwd
+   77  cd .gradle
+   78  ls -all
+   79  rm -rf caches/
+   80  cd -
+   81  cd workspace/assignment-submission/
+   82  gradle v
+   83  ./gradlew tasks
+   84  cd ..
+   85  ls all
+   86  pwd
+   87  ls
+   88  pwd
+   89  rm -rf .gradle/
+   90  ls
+   91  cd workspace/assignment-submission/
+   92  ./gradlew tasks
+   93  ./gradlew testAssignment
+   94  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+   95  ls
+   96  cd gradle/
+   97  ls
+   98  cd wrapper/
+   99  ls
+  100  view gradle-wrapper.properties
+  101  cd ..
+  102  ls
+  103  view gradlew
+  104  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+  105  gradle -v
+  106  cd /
+  107  cd bin/
+  108  ls
+  109  cd ..
+  110  cd usr/
+  111  ls
+  112  cd local/
+  113  ls
+  114  cd ..
+  115  cd sbin/
+  116  ls
+  117  cd ..
+  118  cd home/
+  119  ls
+  120  cd pal_user/
+  121  cd workspace/assignment-submission/
+  122  clear
+  123  date
+  124  cd..
+  125  cd ..
+  126  cd prerequisite-code/
+  127  cf push
+  128  ./gradlew build
+  129  cf push
+  130  ./gradlew prerequisites -PprerequisiteUrl=https://prerequisite-chatty-porcupine.apps.longs.pal.pivotal.io
+  131  cd..
+  132  cd ..
+  133  git clone https://github.com/nagavejju/pal-tracker
+  134  cd pal-tracker/
+  135  gradle
+  136  ls
+  137  gradle wrap
+  138  ls
+  139  gradle wrapper
+  140  ls
+  141  touch build.gradle
+  142  ./gradlew tasks
+  143  ./gradlew check
+  144  ./gradlew tasks --all
+  145  ./gradlew build
+  146  java -jar build/libs/pal-tracker.jar
+  147  ./gradlew build
+  148  java -jar build/libs/pal-tracker.jar
+  149  cf push
+  150  cd ..
+  151  cd assignment-submission/
+  152  ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-boisterous-fox.apps.longs.pal.pivotal.io/
+  153  cd ..
+  154  cd pal-tracker/
+  155  git commit -a -m "adding initial files"
+  156  git commit -a -m "adding initial files" --author "nagesh_vejj@yahoo.com"
+  157  git commit -a -m "adding initial files" --author "nagavejju"
+  158  git add
+  159  git config --global user.name "nagavejju"
+  160  git config --global user.email "nagesh_vejju@yahoo.com"
+  161  git commit -a -m "adding initial files"
+  162  git push
+  163  git commit -a -m "updated jackson version with 2.9.5"
+  164  git push
+  165  git cherry-pick deployment-start
+  166  ./gradlew build
+  167  ./gradlew clean build
+  168  cf push
+  169  cf pal-tracker start
+  170  cf start
+  171  cf start pal-tracker
+  172  cf logs --recent pal-tracker
+  173  clear
+  174  cf push
+  175  cf logs --recent pal-tracker
+  176  cf set-env pal-tracker WELCOME_MESSAGE "Hello from Cloud Foundry"
+  177  cf restage pal-tracker
+  178  git commit -a -m "ENV Variables"
+  179  git push
+  180  cf logs --recent pal-tracker
+  181  history\
+  182  history
+  183  cf scale pal-tracker -m 768M -f
+  184  cf status
+  185  cf help
+  186  cf apps
+  187  cf login -a https://api.sys.longs.pal.pivotal.io
+  188  cf scale pal-tracker -m 768M -f
+  189  cf login -a https://api.sys.longs.pal.pivotal.io
+  190  cf scale pal-tracker -m 768M -f
+  191  cf scale pal-tracker -m 1024M -f
+  192  cf scale pal-tracker -i 2
+  193  cf app pal-tracker
+  194  cf delete pal-tracker
+  195  ./gradlew build
+  196  cf push
+  197  cf restage
+  198  cf restage pal-tracker
+  199  cf delete pal-tracker
+  200  ./gradlew build
+  201  cf push
+  202  cf domains
+  203  cf map-route pal-tracker ${DOMAIN} --hostname pal-tracker-${INITIALS}-dev
+  204  cf map-route pal-tracker apps.longs.pal.pivotal.io --hostname pal-tracker-egs-dev
+  205  cf unmap-route pal-tracker apps.longs.pal.pivotal.io --hostname pal-tracker-egs-dev
+  206  cd ../assignment-submission/
+  207  ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://pal-tracker-restless-ratel.apps.longs.pal.pivotal.io
+  208  history
+  209  git commit -a -m "added env variables"
+  210  cd ../pal-tracker/
+  211  git commit -a -m "added env variables"
+  212  git push
+  213  git commit -a -m "added env variables"
+  214  git push
+  215  history
