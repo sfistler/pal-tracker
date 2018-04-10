@@ -1,16 +1,16 @@
-    1  cd ~/Downloads/
-    2  chmod +x ubuntu_install.sh
-    3  ./ubuntu_install.sh
+1  cd ~/Downloads/
+    2  chmod +x ubuntu_install.sh 
+    3  ./ubuntu_install.sh 
     4  sudo apt update
     5  sudo apt -y upgrade
     6  sudo apt -y autoremove
     7  reboot
     8  cd ~/Downloads/
     9  ls
-   10  ./ubuntu_install.sh
+   10  ./ubuntu_install.sh 
    11  ls
    12  cd ~/workspace/
-   13  sudo
+   13  sudo 
    14  git
    15  clear
    16  git clone https://github.com/platform-acceleration-lab/prerequisite-code.git
@@ -97,7 +97,7 @@
    97  ls
    98  cd wrapper/
    99  ls
-  100  view gradle-wrapper.properties
+  100  view gradle-wrapper.properties 
   101  cd ..
   102  ls
   103  view gradlew
@@ -143,9 +143,9 @@
   143  ./gradlew check
   144  ./gradlew tasks --all
   145  ./gradlew build
-  146  java -jar build/libs/pal-tracker.jar
+  146  java -jar build/libs/pal-tracker.jar 
   147  ./gradlew build
-  148  java -jar build/libs/pal-tracker.jar
+  148  java -jar build/libs/pal-tracker.jar 
   149  cf push
   150  cd ..
   151  cd assignment-submission/
@@ -181,14 +181,14 @@
   181  history\
   182  history
   183  cf scale pal-tracker -m 768M -f
-  184  cf status
-  185  cf help
+  184  cf status 
+  185  cf help 
   186  cf apps
   187  cf login -a https://api.sys.longs.pal.pivotal.io
   188  cf scale pal-tracker -m 768M -f
   189  cf login -a https://api.sys.longs.pal.pivotal.io
   190  cf scale pal-tracker -m 768M -f
-  191  cf scale pal-tracker -m 1024M -f
+  191  cf scale pal-tracker -m 1024M -f 
   192  cf scale pal-tracker -i 2
   193  cf app pal-tracker
   194  cf delete pal-tracker
@@ -198,7 +198,7 @@
   198  cf restage pal-tracker
   199  cf delete pal-tracker
   200  ./gradlew build
-  201  cf push
+  201  cf push 
   202  cf domains
   203  cf map-route pal-tracker ${DOMAIN} --hostname pal-tracker-${INITIALS}-dev
   204  cf map-route pal-tracker apps.longs.pal.pivotal.io --hostname pal-tracker-egs-dev
@@ -213,3 +213,102 @@
   213  git commit -a -m "added env variables"
   214  git push
   215  history
+  216  git commit -a -m "added env variables"
+  217  history
+  218  git push
+  219  git cherry-pick pipeline-start
+  220  history
+  221  git push
+  222  cf push
+  223  cf logs --recent pal-tracker
+  224  history
+  225  fly --target pal-concourse login --concurse-url https://concourse.longs.pal.pivotal.io --teamname pendyala-murthy
+  226  ./fly --target pal-concourse login --concurse-url https://concourse.longs.pal.pivotal.io --teamname pendyala-murthy
+  227  ./fly
+  228  chmod -x
+  229  chmod +x fly
+  230  cd ..
+  231  chmod +x fly
+  232  ./fly --target pal-concourse login --concurse-url https://concourse.longs.pal.pivotal.io --teamname pendyala-murthy
+  233  ./fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --teamname pendyala-murthy
+  234  ./fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name pendyala-murthy
+  235  cd pal-tracker/
+  236  cf create-space review
+  237  cf logout
+  238  cf login -a https://api.sys.longs.pal.pivotal.io
+  239  cf create-space review
+  240  cf create-space production
+  241  history
+  242  git commit -a -m "concourse setup"
+  243  git push
+  244  git --signoff nagavejju
+  245  git config --global --unset-all
+  246  git config --global --unset user.name
+  247  git config --global --unset user.email
+  248  history
+  249  git config --global user.name "srirampvvm"
+  250  git config --global user.email "plnvbs@gmail.com"
+  251  git commit -a -m "concourse setup"
+  252  git push
+  253  cd..
+  254  cd
+  255  cd workspace/
+  256  cd pal-tracker
+  257  git cherry-pick pipeline-start 
+  258  cd ../gnupg-2.2.6/
+  259  ./gpg full-generate-key
+  260  gpg full-generate-key
+  261  history
+  262  chmod +x gpg
+  263  cd ../pal-tracker
+  264  ssh-keygen -t rsa -b 4096 -C "plnvbs@gmail.com"
+  265  eval "(ssh-agent -s)"
+  266  eval "$(ssh-agent -s)"
+  267  ssh-add ~/.ssh/gitkey
+  268  ssh-add ~/.ssh/id_rsa
+  269  cd
+  270  ssh-add ~/.ssh/id_rsa
+  271  ls
+  272  cd .ssh
+  273  ls
+  274  cd..
+  275  cd ..
+  276  pwd
+  277  ssh-add ~/.ssh/id_rsa/gitkey
+  278  ssh-add ~/.ssh/gitkey
+  279  cd workspace/pal-tracker
+  280  ssh-add ~/.ssh/gitkey
+  281  ssh-add ~/gitkey
+  282  ssh-add gitkey
+  283  git commit
+  284  history
+  285  git commit -a -m "adding variables.yml"
+  286  git push
+  287  ../fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  288  ./gradlew clean build
+  289  ./gradlew build
+  290  chmod +x ./gradlew
+  291  chmod +x gradlew
+  292  ls
+  293  gradle warpper
+  294  gradle wrapper
+  295  gradle wrap
+  296  ./gradlew clean build
+  297  ../fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  298  ../fly -t pal-concourse unpause-pipeline -p pal-tracker
+  299  git commit -a -m "adding  gradle files"
+  300  git push
+  301  ls
+  302  chmod +x gradlew
+  303  git commit -a -m "adding  gradle files"
+  304  git push
+  305  ./gradlew build
+  306  git commit -a -m "adding  gradle files"
+  307  git push
+  308  cf create-space review
+  309  git commit -a -m "adding  gradle files"
+  310  git push
+  311  cd ../assignment-submission/
+  312  /gradlew cloudNativeDeveloperPipelines -PreviewUrl=https://mp-pal-tracker-review.apps.longs.pal.pivotal.io/ -PproductionUrl=https://mp-pal-tracker.apps.longs.pal.pivotal.io/
+  313  ./gradlew cloudNativeDeveloperPipelines -PreviewUrl=https://mp-pal-tracker-review.apps.longs.pal.pivotal.io/ -PproductionUrl=https://mp-pal-tracker.apps.longs.pal.pivotal.io/
+  314  history
